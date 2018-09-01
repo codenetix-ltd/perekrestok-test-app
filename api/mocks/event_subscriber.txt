@@ -1,0 +1,297 @@
+[01-09-2018 15:40] Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [user_id] => 1
+            [type] => 1
+            [is_viewed] => 
+            [is_hidden] => 
+            [is_sent] => 0
+            [message] => ошибка получения данных 1
+            [link] => TODO
+            [fired_at] => 2020-09-20 20:00:00
+            [created_at] => 2018-09-01 15:33:45
+            [updated_at] => 2018-09-01 15:33:45
+            [deleted_at] => 
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [user_id] => 2
+            [type] => 1
+            [is_viewed] => 
+            [is_hidden] => 
+            [is_sent] => 0
+            [message] => файл прочитан и обработан 2
+            [link] => TODO
+            [fired_at] => 2019-08-20 20:00:00
+            [created_at] => 2018-09-01 15:33:45
+            [updated_at] => 2018-09-01 15:33:45
+            [deleted_at] => 
+        )
+
+    [2] => Array
+        (
+            [id] => 3
+            [user_id] => 2
+            [type] => 1
+            [is_viewed] => 
+            [is_hidden] => 
+            [is_sent] => 0
+            [message] => нет цен
+            [link] => TODO
+            [fired_at] => 2020-04-20 22:00:00
+            [created_at] => 2018-09-01 15:33:45
+            [updated_at] => 2018-09-01 15:33:45
+            [deleted_at] => 
+        )
+
+    [3] => Array
+        (
+            [id] => 4
+            [user_id] => 3
+            [type] => 1
+            [is_viewed] => 
+            [is_hidden] => 
+            [is_sent] => 0
+            [message] => привязка выполнена неверно
+            [link] => TODO
+            [fired_at] => 2018-11-20 23:00:00
+            [created_at] => 2018-09-01 15:33:45
+            [updated_at] => 2018-09-01 15:33:45
+            [deleted_at] => 
+        )
+
+    [4] => Array
+        (
+            [id] => 5
+            [user_id] => 2
+            [type] => 1
+            [is_viewed] => 
+            [is_hidden] => 
+            [is_sent] => 0
+            [message] => заблокированы категории
+            [link] => TODO
+            [fired_at] => 2018-10-20 20:00:00
+            [created_at] => 2018-09-01 15:33:45
+            [updated_at] => 2018-09-01 15:33:45
+            [deleted_at] => 
+        )
+
+    [5] => Array
+        (
+            [id] => 6
+            [user_id] => 3
+            [type] => 1
+            [is_viewed] => 
+            [is_hidden] => 
+            [is_sent] => 0
+            [message] => ошибка получения данных 7
+            [link] => TODO
+            [fired_at] => 2020-09-21 00:00:00
+            [created_at] => 2018-09-01 15:33:45
+            [updated_at] => 2018-09-01 15:33:45
+            [deleted_at] => 
+        )
+
+)
+[01-09-2018 15:42] Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [user_id] => 1
+            [type] => 1
+            [is_viewed] => 
+            [is_hidden] => 
+            [is_sent] => 0
+            [message] => ошибка получения данных 1
+            [link] => TODO
+            [fired_at] => 2020-09-20 20:00:00
+            [created_at] => 2018-09-01 15:33:45
+            [updated_at] => 2018-09-01 15:33:45
+            [deleted_at] => 
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [user_id] => 2
+            [type] => 1
+            [is_viewed] => 
+            [is_hidden] => 
+            [is_sent] => 0
+            [message] => файл прочитан и обработан 2
+            [link] => TODO
+            [fired_at] => 2019-08-20 20:00:00
+            [created_at] => 2018-09-01 15:33:45
+            [updated_at] => 2018-09-01 15:33:45
+            [deleted_at] => 
+        )
+
+    [2] => Array
+        (
+            [id] => 3
+            [user_id] => 2
+            [type] => 1
+            [is_viewed] => 
+            [is_hidden] => 
+            [is_sent] => 0
+            [message] => нет цен
+            [link] => TODO
+            [fired_at] => 2020-04-20 22:00:00
+            [created_at] => 2018-09-01 15:33:45
+            [updated_at] => 2018-09-01 15:33:45
+            [deleted_at] => 
+        )
+
+    [3] => Array
+        (
+            [id] => 4
+            [user_id] => 3
+            [type] => 1
+            [is_viewed] => 
+            [is_hidden] => 
+            [is_sent] => 0
+            [message] => привязка выполнена неверно
+            [link] => TODO
+            [fired_at] => 2018-11-20 23:00:00
+            [created_at] => 2018-09-01 15:33:45
+            [updated_at] => 2018-09-01 15:33:45
+            [deleted_at] => 
+        )
+
+    [4] => Array
+        (
+            [id] => 5
+            [user_id] => 2
+            [type] => 1
+            [is_viewed] => 
+            [is_hidden] => 
+            [is_sent] => 0
+            [message] => заблокированы категории
+            [link] => TODO
+            [fired_at] => 2018-10-20 20:00:00
+            [created_at] => 2018-09-01 15:33:45
+            [updated_at] => 2018-09-01 15:33:45
+            [deleted_at] => 
+        )
+
+    [5] => Array
+        (
+            [id] => 6
+            [user_id] => 3
+            [type] => 1
+            [is_viewed] => 
+            [is_hidden] => 
+            [is_sent] => 0
+            [message] => ошибка получения данных 7
+            [link] => TODO
+            [fired_at] => 2020-09-21 00:00:00
+            [created_at] => 2018-09-01 15:33:45
+            [updated_at] => 2018-09-01 15:33:45
+            [deleted_at] => 
+        )
+
+)
+[01-09-2018 16:45] Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [user_id] => 1
+            [type] => 1
+            [is_viewed] => 
+            [is_hidden] => 
+            [is_sent] => 0
+            [message] => ошибка получения данных 1
+            [link] => TODO
+            [fired_at] => 2020-09-20 20:00:00
+            [created_at] => 2018-09-01 16:45:54
+            [updated_at] => 2018-09-01 16:45:54
+            [deleted_at] => 
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [user_id] => 2
+            [type] => 1
+            [is_viewed] => 
+            [is_hidden] => 
+            [is_sent] => 0
+            [message] => файл прочитан и обработан 2
+            [link] => TODO
+            [fired_at] => 2019-08-20 20:00:00
+            [created_at] => 2018-09-01 16:45:54
+            [updated_at] => 2018-09-01 16:45:54
+            [deleted_at] => 
+        )
+
+    [2] => Array
+        (
+            [id] => 3
+            [user_id] => 2
+            [type] => 1
+            [is_viewed] => 
+            [is_hidden] => 
+            [is_sent] => 0
+            [message] => нет цен
+            [link] => TODO
+            [fired_at] => 2020-04-20 22:00:00
+            [created_at] => 2018-09-01 16:45:54
+            [updated_at] => 2018-09-01 16:45:54
+            [deleted_at] => 
+        )
+
+    [3] => Array
+        (
+            [id] => 4
+            [user_id] => 3
+            [type] => 1
+            [is_viewed] => 
+            [is_hidden] => 
+            [is_sent] => 0
+            [message] => привязка выполнена неверно
+            [link] => TODO
+            [fired_at] => 2018-11-20 23:00:00
+            [created_at] => 2018-09-01 16:45:54
+            [updated_at] => 2018-09-01 16:45:54
+            [deleted_at] => 
+        )
+
+    [4] => Array
+        (
+            [id] => 5
+            [user_id] => 2
+            [type] => 1
+            [is_viewed] => 
+            [is_hidden] => 
+            [is_sent] => 0
+            [message] => заблокированы категории
+            [link] => TODO
+            [fired_at] => 2018-10-20 20:00:00
+            [created_at] => 2018-09-01 16:45:55
+            [updated_at] => 2018-09-01 16:45:55
+            [deleted_at] => 
+        )
+
+    [5] => Array
+        (
+            [id] => 6
+            [user_id] => 3
+            [type] => 1
+            [is_viewed] => 
+            [is_hidden] => 
+            [is_sent] => 0
+            [message] => ошибка получения данных 7
+            [link] => TODO
+            [fired_at] => 2020-09-21 00:00:00
+            [created_at] => 2018-09-01 16:45:55
+            [updated_at] => 2018-09-01 16:45:55
+            [deleted_at] => 
+        )
+
+)

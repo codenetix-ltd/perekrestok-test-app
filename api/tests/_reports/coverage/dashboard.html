@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /var/www/app</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href=".css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href=".css/nv.d3.min.css" rel="stylesheet" type="text/css">
+  <link href=".css/style.css" rel="stylesheet" type="text/css">
+  <link href=".css/custom.css" rel="stylesheet" type="text/css">
+  <!--[if lt IE 9]>
+  <script src=".js/html5shiv.min.js"></script>
+  <script src=".js/respond.min.js"></script>
+  <![endif]-->
+ </head>
+ <body>
+  <header>
+   <div class="container">
+    <div class="row">
+     <div class="col-md-12">
+      <ol class="breadcrumb">
+        <li><a href="index.html">/var/www/app</a></li>
+        <li class="active">(Dashboard)</li>
+
+      </ol>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Services/Clients/UserExternalServiceClient/RawToObjectExternalUserTransformer.php.html#5">App\Services\Clients\UserExternalServiceClient\RawToObjectExternalUserTransformer</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/Clients/EventExternalServiceClient/EventExternalServiceClientMock.php.html#9">App\Services\Clients\EventExternalServiceClient\EventExternalServiceClientMock</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Exceptions/Handler.php.html#8">App\Exceptions\Handler</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/ForgotPasswordController.php.html#8">App\Http\Controllers\Auth\ForgotPasswordController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/LoginController.php.html#8">App\Http\Controllers\Auth\LoginController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/RegisterController.php.html#11">App\Http\Controllers\Auth\RegisterController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/ResetPasswordController.php.html#8">App\Http\Controllers\Auth\ResetPasswordController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Middleware/RedirectIfAuthenticated.php.html#8">App\Http\Middleware\RedirectIfAuthenticated</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/Clients/UserExternalServiceClient/ExternalUser.php.html#11">App\Services\Clients\UserExternalServiceClient\ExternalUser</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Providers/BroadcastServiceProvider.php.html#8">App\Providers\BroadcastServiceProvider</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/Clients/UserExternalServiceClient/UserExternalServiceClientMock.php.html#5">App\Services\Clients\UserExternalServiceClient\UserExternalServiceClientMock</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/Clients/ExternalEventSubscriberClient/ExternalEventSubscriberClientMock.php.html#7">App\Services\Clients\ExternalEventSubscriberClient\ExternalEventSubscriberClientMock</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/Clients/EventExternalServiceClient/RawToObjectExternalEventTransformer.php.html#5">App\Services\Clients\EventExternalServiceClient\RawToObjectExternalEventTransformer</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/Clients/EventExternalServiceClient/ExternalEvent.php.html#13">App\Services\Clients\EventExternalServiceClient\ExternalEvent</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/UserRepository.php.html#12">App\Repositories\UserRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Console/Commands/PullEvents.php.html#13">App\Console\Commands\PullEvents</a></td><td class="text-right">18%</td></tr>
+       <tr><td><a href="Services/EventService.php.html#13">App\Services\EventService</a></td><td class="text-right">23%</td></tr>
+       <tr><td><a href="Console/Commands/PushEvents.php.html#11">App\Console\Commands\PushEvents</a></td><td class="text-right">27%</td></tr>
+       <tr><td><a href="Repositories/CRUDRepositoryTrait.php.html#9">CRUDRepositoryTrait</a></td><td class="text-right">46%</td></tr>
+       <tr><td><a href="QueryObject/AQueryObject.php.html#9">App\QueryObject\AQueryObject</a></td><td class="text-right">71%</td></tr>
+       <tr><td><a href="Http/Requests/ABaseAPIRequest.php.html#16">App\Http\Requests\ABaseAPIRequest</a></td><td class="text-right">72%</td></tr>
+       <tr><td><a href="Services/CRUDServiceTrait.php.html#9">CRUDServiceTrait</a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="Repositories/EventRepository.php.html#12">App\Repositories\EventRepository</a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="QueryParams/QueryParamsObject.php.html#10">App\QueryParams\QueryParamsObject</a></td><td class="text-right">76%</td></tr>
+       <tr><td><a href="QueryObject/EventListQueryObject.php.html#10">App\QueryObject\EventListQueryObject</a></td><td class="text-right">88%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Services/Clients/EventExternalServiceClient/EventExternalServiceClientMock.php.html#9">App\Services\Clients\EventExternalServiceClient\EventExternalServiceClientMock</a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="Http/Requests/ABaseAPIRequest.php.html#16">App\Http\Requests\ABaseAPIRequest</a></td><td class="text-right">28</td></tr>
+       <tr><td><a href="Repositories/CRUDRepositoryTrait.php.html#9">CRUDRepositoryTrait</a></td><td class="text-right">25</td></tr>
+       <tr><td><a href="QueryObject/AQueryObject.php.html#9">App\QueryObject\AQueryObject</a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="QueryParams/QueryParamsObject.php.html#10">App\QueryParams\QueryParamsObject</a></td><td class="text-right">16</td></tr>
+       <tr><td><a href="Console/Commands/PullEvents.php.html#13">App\Console\Commands\PullEvents</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Repositories/UserRepository.php.html#12">App\Repositories\UserRepository</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Services/CRUDServiceTrait.php.html#9">CRUDServiceTrait</a></td><td class="text-right">9</td></tr>
+       <tr><td><a href="QueryObject/EventListQueryObject.php.html#10">App\QueryObject\EventListQueryObject</a></td><td class="text-right">7</td></tr>
+       <tr><td><a href="Services/EventService.php.html#13">App\Services\EventService</a></td><td class="text-right">7</td></tr>
+       <tr><td><a href="Repositories/EventRepository.php.html#12">App\Repositories\EventRepository</a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Console/Commands/PushEvents.php.html#11">App\Console\Commands\PushEvents</a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Middleware/RedirectIfAuthenticated.php.html#8">App\Http\Middleware\RedirectIfAuthenticated</a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Services/Clients/UserExternalServiceClient/UserExternalServiceClientMock.php.html#5">App\Services\Clients\UserExternalServiceClient\UserExternalServiceClientMock</a></td><td class="text-right">6</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Console/Commands/PullEvents.php.html#49"><abbr title="App\Console\Commands\PullEvents::handle">handle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/Clients/UserExternalServiceClient/ExternalUser.php.html#40"><abbr title="App\Services\Clients\UserExternalServiceClient\ExternalUser::setId">setId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/Clients/EventExternalServiceClient/EventExternalServiceClientMock.php.html#44"><abbr title="App\Services\Clients\EventExternalServiceClient\EventExternalServiceClientMock::readFileLineByLine">readFileLineByLine</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/Clients/EventExternalServiceClient/EventExternalServiceClientMock.php.html#61"><abbr title="App\Services\Clients\EventExternalServiceClient\EventExternalServiceClientMock::parseLine">parseLine</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/Clients/EventExternalServiceClient/ExternalEvent.php.html#33"><abbr title="App\Services\Clients\EventExternalServiceClient\ExternalEvent::getUserId">getUserId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/Clients/EventExternalServiceClient/ExternalEvent.php.html#42"><abbr title="App\Services\Clients\EventExternalServiceClient\ExternalEvent::setUserId">setUserId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/Clients/EventExternalServiceClient/ExternalEvent.php.html#50"><abbr title="App\Services\Clients\EventExternalServiceClient\ExternalEvent::getMessage">getMessage</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/Clients/EventExternalServiceClient/ExternalEvent.php.html#59"><abbr title="App\Services\Clients\EventExternalServiceClient\ExternalEvent::setMessage">setMessage</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/Clients/EventExternalServiceClient/ExternalEvent.php.html#67"><abbr title="App\Services\Clients\EventExternalServiceClient\ExternalEvent::getDateTime">getDateTime</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/Clients/EventExternalServiceClient/ExternalEvent.php.html#76"><abbr title="App\Services\Clients\EventExternalServiceClient\ExternalEvent::setDateTime">setDateTime</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/Clients/EventExternalServiceClient/RawToObjectExternalEventTransformer.php.html#11"><abbr title="App\Services\Clients\EventExternalServiceClient\RawToObjectExternalEventTransformer::transform">transform</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/Clients/ExternalEventSubscriberClient/ExternalEventSubscriberClientMock.php.html#13"><abbr title="App\Services\Clients\ExternalEventSubscriberClient\ExternalEventSubscriberClientMock::push">push</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/Clients/UserExternalServiceClient/ExternalUser.php.html#31"><abbr title="App\Services\Clients\UserExternalServiceClient\ExternalUser::getId">getId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/Clients/UserExternalServiceClient/ExternalUser.php.html#48"><abbr title="App\Services\Clients\UserExternalServiceClient\ExternalUser::getName">getName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Console/Commands/PushEvents.php.html#47"><abbr title="App\Console\Commands\PushEvents::handle">handle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/Clients/UserExternalServiceClient/ExternalUser.php.html#57"><abbr title="App\Services\Clients\UserExternalServiceClient\ExternalUser::setName">setName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/Clients/UserExternalServiceClient/ExternalUser.php.html#65"><abbr title="App\Services\Clients\UserExternalServiceClient\ExternalUser::getEmail">getEmail</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/Clients/UserExternalServiceClient/ExternalUser.php.html#74"><abbr title="App\Services\Clients\UserExternalServiceClient\ExternalUser::setEmail">setEmail</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/Clients/UserExternalServiceClient/RawToObjectExternalUserTransformer.php.html#11"><abbr title="App\Services\Clients\UserExternalServiceClient\RawToObjectExternalUserTransformer::transform">transform</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/Clients/UserExternalServiceClient/UserExternalServiceClientMock.php.html#32"><abbr title="App\Services\Clients\UserExternalServiceClient\UserExternalServiceClientMock::getUserById">getUserById</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/EventService.php.html#42"><abbr title="App\Services\EventService::createFromExternalEvent">createFromExternalEvent</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/CRUDRepositoryTrait.php.html#20"><abbr title="CRUDRepositoryTrait::paginateList">paginateList</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/CRUDRepositoryTrait.php.html#31"><abbr title="CRUDRepositoryTrait::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/CRUDRepositoryTrait.php.html#65"><abbr title="CRUDRepositoryTrait::findWhere">findWhere</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/CRUDRepositoryTrait.php.html#89"><abbr title="CRUDRepositoryTrait::all">all</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/CRUDServiceTrait.php.html#46"><abbr title="CRUDServiceTrait::list">list</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/Clients/EventExternalServiceClient/EventExternalServiceClientMock.php.html#20"><abbr title="App\Services\Clients\EventExternalServiceClient\EventExternalServiceClientMock::requestFromDateTime">requestFromDateTime</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/UserRepository.php.html#28"><abbr title="App\Repositories\UserRepository::findByExternalId">findByExternalId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/UserRepository.php.html#19"><abbr title="App\Repositories\UserRepository::getInstance">getInstance</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/EventRepository.php.html#55"><abbr title="App\Repositories\EventRepository::allNotSent">allNotSent</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Exceptions/Handler.php.html#35"><abbr title="App\Exceptions\Handler::report">report</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Exceptions/Handler.php.html#47"><abbr title="App\Exceptions\Handler::render">render</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/ForgotPasswordController.php.html#28"><abbr title="App\Http\Controllers\Auth\ForgotPasswordController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/LoginController.php.html#35"><abbr title="App\Http\Controllers\Auth\LoginController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/RegisterController.php.html#38"><abbr title="App\Http\Controllers\Auth\RegisterController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/RegisterController.php.html#49"><abbr title="App\Http\Controllers\Auth\RegisterController::validator">validator</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/RegisterController.php.html#64"><abbr title="App\Http\Controllers\Auth\RegisterController::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/ResetPasswordController.php.html#35"><abbr title="App\Http\Controllers\Auth\ResetPasswordController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Middleware/RedirectIfAuthenticated.php.html#18"><abbr title="App\Http\Middleware\RedirectIfAuthenticated::handle">handle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/ABaseAPIRequest.php.html#65"><abbr title="App\Http\Requests\ABaseAPIRequest::validated">validated</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/ABaseAPIRequest.php.html#132"><abbr title="App\Http\Requests\ABaseAPIRequest::failedValidation">failedValidation</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/ABaseAPIRequest.php.html#148"><abbr title="App\Http\Requests\ABaseAPIRequest::createQueryParamsObject">createQueryParamsObject</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/ABaseAPIRequest.php.html#158"><abbr title="App\Http\Requests\ABaseAPIRequest::authorize">authorize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Providers/BroadcastServiceProvider.php.html#15"><abbr title="App\Providers\BroadcastServiceProvider::boot">boot</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="QueryObject/AQueryObject.php.html#36"><abbr title="App\QueryObject\AQueryObject::map">map</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="QueryObject/AQueryObject.php.html#118"><abbr title="App\QueryObject\AQueryObject::applyJoin">applyJoin</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="QueryParams/QueryParamsObject.php.html#99"><abbr title="App\QueryParams\QueryParamsObject::getAllowedIncludes">getAllowedIncludes</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="QueryParams/QueryParamsObject.php.html#131"><abbr title="App\QueryParams\QueryParamsObject::getIncludeData">getIncludeData</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="QueryParams/QueryParamsObject.php.html#162"><abbr title="App\QueryParams\QueryParamsObject::setAllowedIncludes">setAllowedIncludes</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="QueryParams/QueryParamsObject.php.html#173"><abbr title="App\QueryParams\QueryParamsObject::setAllowedFieldsToSort">setAllowedFieldsToSort</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/EventRepository.php.html#45"><abbr title="App\Repositories\EventRepository::maxFiredAtDateTime">maxFiredAtDateTime</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/CRUDServiceTrait.php.html#55"><abbr title="CRUDServiceTrait::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="QueryObject/AQueryObject.php.html#63"><abbr title="App\QueryObject\AQueryObject::applyQueryParams">applyQueryParams</abbr></a></td><td class="text-right">61%</td></tr>
+       <tr><td><a href="QueryObject/EventListQueryObject.php.html#29"><abbr title="App\QueryObject\EventListQueryObject::applyJoin">applyJoin</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="Http/Requests/ABaseAPIRequest.php.html#113"><abbr title="App\Http\Requests\ABaseAPIRequest::validateResolved">validateResolved</abbr></a></td><td class="text-right">71%</td></tr>
+       <tr><td><a href="Repositories/CRUDRepositoryTrait.php.html#75"><abbr title="CRUDRepositoryTrait::delete">delete</abbr></a></td><td class="text-right">75%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Services/Clients/EventExternalServiceClient/EventExternalServiceClientMock.php.html#44"><abbr title="App\Services\Clients\EventExternalServiceClient\EventExternalServiceClientMock::readFileLineByLine">readFileLineByLine</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Repositories/EventRepository.php.html#45"><abbr title="App\Repositories\EventRepository::maxFiredAtDateTime">maxFiredAtDateTime</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Console/Commands/PullEvents.php.html#49"><abbr title="App\Console\Commands\PullEvents::handle">handle</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="QueryObject/AQueryObject.php.html#63"><abbr title="App\QueryObject\AQueryObject::applyQueryParams">applyQueryParams</abbr></a></td><td class="text-right">9</td></tr>
+       <tr><td><a href="Console/Commands/PushEvents.php.html#47"><abbr title="App\Console\Commands\PushEvents::handle">handle</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Middleware/RedirectIfAuthenticated.php.html#18"><abbr title="App\Http\Middleware\RedirectIfAuthenticated::handle">handle</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Repositories/UserRepository.php.html#28"><abbr title="App\Repositories\UserRepository::findByExternalId">findByExternalId</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Services/Clients/EventExternalServiceClient/EventExternalServiceClientMock.php.html#20"><abbr title="App\Services\Clients\EventExternalServiceClient\EventExternalServiceClientMock::requestFromDateTime">requestFromDateTime</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Services/Clients/EventExternalServiceClient/EventExternalServiceClientMock.php.html#61"><abbr title="App\Services\Clients\EventExternalServiceClient\EventExternalServiceClientMock::parseLine">parseLine</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Services/Clients/UserExternalServiceClient/UserExternalServiceClientMock.php.html#32"><abbr title="App\Services\Clients\UserExternalServiceClient\UserExternalServiceClientMock::getUserById">getUserById</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Services/EventService.php.html#42"><abbr title="App\Services\EventService::createFromExternalEvent">createFromExternalEvent</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Repositories/CRUDRepositoryTrait.php.html#65"><abbr title="CRUDRepositoryTrait::findWhere">findWhere</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Requests/ABaseAPIRequest.php.html#113"><abbr title="App\Http\Requests\ABaseAPIRequest::validateResolved">validateResolved</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="QueryObject/EventListQueryObject.php.html#29"><abbr title="App\QueryObject\EventListQueryObject::applyJoin">applyJoin</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Repositories/CRUDRepositoryTrait.php.html#75"><abbr title="CRUDRepositoryTrait::delete">delete</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 6.0.7</a> using <a href="https://secure.php.net/" target="_top">PHP 7.1.15</a> with <a href="https://xdebug.org/">Xdebug 2.6.1</a> and <a href="https://phpunit.de/">PHPUnit 7.3.2</a> at Sat Sep 1 16:23:46 UTC 2018.</small>
+    </p>
+   </footer>
+  </div>
+  <script src=".js/jquery.min.js" type="text/javascript"></script>
+  <script src=".js/bootstrap.min.js" type="text/javascript"></script>
+  <script src=".js/holder.min.js" type="text/javascript"></script>
+  <script src=".js/d3.min.js" type="text/javascript"></script>
+  <script src=".js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([15,0,1,2,0,1,0,0,5,1,0,23], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([52,0,0,0,0,0,0,2,2,0,1,58], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[18.75,4,"<a href=\"Console\/Commands\/PullEvents.php.html#13\">App\\Console\\Commands\\PullEvents<\/a>"],[27.27272727272727,3,"<a href=\"Console\/Commands\/PushEvents.php.html#11\">App\\Console\\Commands\\PushEvents<\/a>"],[100,2,"<a href=\"Console\/Kernel.php.html#10\">App\\Console\\Kernel<\/a>"],[100,0,"<a href=\"Enums\/EventType.php.html#5\">App\\Enums\\EventType<\/a>"],[100,1,"<a href=\"Event.php.html#8\">App\\Event<\/a>"],[0,2,"<a href=\"Exceptions\/Handler.php.html#8\">App\\Exceptions\\Handler<\/a>"],[0,1,"<a href=\"Http\/Controllers\/Auth\/ForgotPasswordController.php.html#8\">App\\Http\\Controllers\\Auth\\ForgotPasswordController<\/a>"],[0,1,"<a href=\"Http\/Controllers\/Auth\/LoginController.php.html#8\">App\\Http\\Controllers\\Auth\\LoginController<\/a>"],[0,3,"<a href=\"Http\/Controllers\/Auth\/RegisterController.php.html#11\">App\\Http\\Controllers\\Auth\\RegisterController<\/a>"],[0,1,"<a href=\"Http\/Controllers\/Auth\/ResetPasswordController.php.html#8\">App\\Http\\Controllers\\Auth\\ResetPasswordController<\/a>"],[100,0,"<a href=\"Http\/Controllers\/Controller.php.html#10\">App\\Http\\Controllers\\Controller<\/a>"],[100,4,"<a href=\"Http\/Controllers\/EventController.php.html#12\">App\\Http\\Controllers\\EventController<\/a>"],[100,0,"<a href=\"Http\/Kernel.php.html#7\">App\\Http\\Kernel<\/a>"],[100,0,"<a href=\"Http\/Middleware\/CheckForMaintenanceMode.php.html#7\">App\\Http\\Middleware\\CheckForMaintenanceMode<\/a>"],[100,0,"<a href=\"Http\/Middleware\/EncryptCookies.php.html#7\">App\\Http\\Middleware\\EncryptCookies<\/a>"],[0,2,"<a href=\"Http\/Middleware\/RedirectIfAuthenticated.php.html#8\">App\\Http\\Middleware\\RedirectIfAuthenticated<\/a>"],[100,0,"<a href=\"Http\/Middleware\/TrimStrings.php.html#7\">App\\Http\\Middleware\\TrimStrings<\/a>"],[100,0,"<a href=\"Http\/Middleware\/TrustProxies.php.html#8\">App\\Http\\Middleware\\TrustProxies<\/a>"],[100,0,"<a href=\"Http\/Middleware\/VerifyCsrfToken.php.html#7\">App\\Http\\Middleware\\VerifyCsrfToken<\/a>"],[72.41379310344827,20,"<a href=\"Http\/Requests\/ABaseAPIRequest.php.html#16\">App\\Http\\Requests\\ABaseAPIRequest<\/a>"],[100,2,"<a href=\"Http\/Requests\/EventPaginateRequest.php.html#8\">App\\Http\\Requests\\EventPaginateRequest<\/a>"],[100,3,"<a href=\"Http\/Requests\/EventUpdatePartiallyRequest.php.html#8\">App\\Http\\Requests\\EventUpdatePartiallyRequest<\/a>"],[100,1,"<a href=\"Http\/Resources\/Collections\/EventResourceCollection.php.html#7\">App\\Http\\Resources\\EventResourceCollection<\/a>"],[100,2,"<a href=\"Http\/Resources\/EventResource.php.html#7\">App\\Http\\Resources\\EventResource<\/a>"],[100,1,"<a href=\"Http\/Resources\/UserResource.php.html#7\">App\\Http\\Resources\\UserResource<\/a>"],[100,2,"<a href=\"Providers\/AppServiceProvider.php.html#20\">App\\Providers\\AppServiceProvider<\/a>"],[100,1,"<a href=\"Providers\/AuthServiceProvider.php.html#8\">App\\Providers\\AuthServiceProvider<\/a>"],[0,1,"<a href=\"Providers\/BroadcastServiceProvider.php.html#8\">App\\Providers\\BroadcastServiceProvider<\/a>"],[100,1,"<a href=\"Providers\/EventServiceProvider.php.html#8\">App\\Providers\\EventServiceProvider<\/a>"],[100,4,"<a href=\"Providers\/RouteServiceProvider.php.html#8\">App\\Providers\\RouteServiceProvider<\/a>"],[71.875,15,"<a href=\"QueryObject\/AQueryObject.php.html#9\">App\\QueryObject\\AQueryObject<\/a>"],[88.88888888888889,7,"<a href=\"QueryObject\/EventListQueryObject.php.html#10\">App\\QueryObject\\EventListQueryObject<\/a>"],[100,0,"<a href=\"QueryParams\/EmptyQueryParamsObject.php.html#8\">App\\QueryParams\\EmptyQueryParamsObject<\/a>"],[76.66666666666667,14,"<a href=\"QueryParams\/QueryParamsObject.php.html#10\">App\\QueryParams\\QueryParamsObject<\/a>"],[75,6,"<a href=\"Repositories\/EventRepository.php.html#12\">App\\Repositories\\EventRepository<\/a>"],[0,3,"<a href=\"Repositories\/UserRepository.php.html#12\">App\\Repositories\\UserRepository<\/a>"],[0,9,"<a href=\"Services\/Clients\/EventExternalServiceClient\/EventExternalServiceClientMock.php.html#9\">App\\Services\\Clients\\EventExternalServiceClient\\EventExternalServiceClientMock<\/a>"],[0,6,"<a href=\"Services\/Clients\/EventExternalServiceClient\/ExternalEvent.php.html#13\">App\\Services\\Clients\\EventExternalServiceClient\\ExternalEvent<\/a>"],[0,1,"<a href=\"Services\/Clients\/EventExternalServiceClient\/RawToObjectExternalEventTransformer.php.html#5\">App\\Services\\Clients\\EventExternalServiceClient\\RawToObjectExternalEventTransformer<\/a>"],[0,1,"<a href=\"Services\/Clients\/ExternalEventSubscriberClient\/ExternalEventSubscriberClientMock.php.html#7\">App\\Services\\Clients\\ExternalEventSubscriberClient\\ExternalEventSubscriberClientMock<\/a>"],[0,6,"<a href=\"Services\/Clients\/UserExternalServiceClient\/ExternalUser.php.html#11\">App\\Services\\Clients\\UserExternalServiceClient\\ExternalUser<\/a>"],[100,0,"<a href=\"Services\/Clients\/UserExternalServiceClient\/ExternalUserNotFoundException.php.html#7\">App\\Services\\Clients\\UserExternalServiceClient\\ExternalUserNotFoundException<\/a>"],[0,1,"<a href=\"Services\/Clients\/UserExternalServiceClient\/RawToObjectExternalUserTransformer.php.html#5\">App\\Services\\Clients\\UserExternalServiceClient\\RawToObjectExternalUserTransformer<\/a>"],[0,2,"<a href=\"Services\/Clients\/UserExternalServiceClient\/UserExternalServiceClientMock.php.html#5\">App\\Services\\Clients\\UserExternalServiceClient\\UserExternalServiceClientMock<\/a>"],[23.52941176470588,3,"<a href=\"Services\/EventService.php.html#13\">App\\Services\\EventService<\/a>"],[100,0,"<a href=\"User.php.html#8\">App\\User<\/a>"],[46.15384615384615,10,"<a href=\"Repositories\/CRUDRepositoryTrait.php.html#9\">CRUDRepositoryTrait<\/a>"],[75,8,"<a href=\"Services\/CRUDServiceTrait.php.html#9\">CRUDServiceTrait<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[100,1,"<a href=\"Console\/Commands\/PullEvents.php.html#38\">App\\Console\\Commands\\PullEvents::__construct<\/a>"],[0,3,"<a href=\"Console\/Commands\/PullEvents.php.html#49\">App\\Console\\Commands\\PullEvents::handle<\/a>"],[100,1,"<a href=\"Console\/Commands\/PushEvents.php.html#36\">App\\Console\\Commands\\PushEvents::__construct<\/a>"],[0,2,"<a href=\"Console\/Commands\/PushEvents.php.html#47\">App\\Console\\Commands\\PushEvents::handle<\/a>"],[100,1,"<a href=\"Console\/Kernel.php.html#28\">App\\Console\\Kernel::schedule<\/a>"],[100,1,"<a href=\"Console\/Kernel.php.html#39\">App\\Console\\Kernel::commands<\/a>"],[100,1,"<a href=\"Event.php.html#35\">App\\Event::user<\/a>"],[0,1,"<a href=\"Exceptions\/Handler.php.html#35\">App\\Exceptions\\Handler::report<\/a>"],[0,1,"<a href=\"Exceptions\/Handler.php.html#47\">App\\Exceptions\\Handler::render<\/a>"],[0,1,"<a href=\"Http\/Controllers\/Auth\/ForgotPasswordController.php.html#28\">App\\Http\\Controllers\\Auth\\ForgotPasswordController::__construct<\/a>"],[0,1,"<a href=\"Http\/Controllers\/Auth\/LoginController.php.html#35\">App\\Http\\Controllers\\Auth\\LoginController::__construct<\/a>"],[0,1,"<a href=\"Http\/Controllers\/Auth\/RegisterController.php.html#38\">App\\Http\\Controllers\\Auth\\RegisterController::__construct<\/a>"],[0,1,"<a href=\"Http\/Controllers\/Auth\/RegisterController.php.html#49\">App\\Http\\Controllers\\Auth\\RegisterController::validator<\/a>"],[0,1,"<a href=\"Http\/Controllers\/Auth\/RegisterController.php.html#64\">App\\Http\\Controllers\\Auth\\RegisterController::create<\/a>"],[0,1,"<a href=\"Http\/Controllers\/Auth\/ResetPasswordController.php.html#35\">App\\Http\\Controllers\\Auth\\ResetPasswordController::__construct<\/a>"],[100,1,"<a href=\"Http\/Controllers\/EventController.php.html#19\">App\\Http\\Controllers\\EventController::get<\/a>"],[100,1,"<a href=\"Http\/Controllers\/EventController.php.html#32\">App\\Http\\Controllers\\EventController::updatePartially<\/a>"],[100,1,"<a href=\"Http\/Controllers\/EventController.php.html#44\">App\\Http\\Controllers\\EventController::paginate<\/a>"],[100,1,"<a href=\"Http\/Controllers\/EventController.php.html#56\">App\\Http\\Controllers\\EventController::destroy<\/a>"],[0,2,"<a href=\"Http\/Middleware\/RedirectIfAuthenticated.php.html#18\">App\\Http\\Middleware\\RedirectIfAuthenticated::handle<\/a>"],[100,1,"<a href=\"Http\/Requests\/ABaseAPIRequest.php.html#41\">App\\Http\\Requests\\ABaseAPIRequest::createValidatorFactory<\/a>"],[100,1,"<a href=\"Http\/Requests\/ABaseAPIRequest.php.html#50\">App\\Http\\Requests\\ABaseAPIRequest::createDefaultValidator<\/a>"],[0,1,"<a href=\"Http\/Requests\/ABaseAPIRequest.php.html#65\">App\\Http\\Requests\\ABaseAPIRequest::validated<\/a>"],[100,1,"<a href=\"Http\/Requests\/ABaseAPIRequest.php.html#79\">App\\Http\\Requests\\ABaseAPIRequest::messages<\/a>"],[100,1,"<a href=\"Http\/Requests\/ABaseAPIRequest.php.html#89\">App\\Http\\Requests\\ABaseAPIRequest::attributes<\/a>"],[100,1,"<a href=\"Http\/Requests\/ABaseAPIRequest.php.html#100\">App\\Http\\Requests\\ABaseAPIRequest::setContainer<\/a>"],[71.42857142857143,3,"<a href=\"Http\/Requests\/ABaseAPIRequest.php.html#113\">App\\Http\\Requests\\ABaseAPIRequest::validateResolved<\/a>"],[0,1,"<a href=\"Http\/Requests\/ABaseAPIRequest.php.html#132\">App\\Http\\Requests\\ABaseAPIRequest::failedValidation<\/a>"],[100,2,"<a href=\"Http\/Requests\/ABaseAPIRequest.php.html#140\">App\\Http\\Requests\\ABaseAPIRequest::queryParamsObject<\/a>"],[0,1,"<a href=\"Http\/Requests\/ABaseAPIRequest.php.html#148\">App\\Http\\Requests\\ABaseAPIRequest::createQueryParamsObject<\/a>"],[0,1,"<a href=\"Http\/Requests\/ABaseAPIRequest.php.html#158\">App\\Http\\Requests\\ABaseAPIRequest::authorize<\/a>"],[100,4,"<a href=\"Http\/Requests\/ABaseAPIRequest.php.html#166\">App\\Http\\Requests\\ABaseAPIRequest::model<\/a>"],[100,1,"<a href=\"Http\/Requests\/ABaseAPIRequest.php.html#178\">App\\Http\\Requests\\ABaseAPIRequest::rules<\/a>"],[100,1,"<a href=\"Http\/Requests\/ABaseAPIRequest.php.html#186\">App\\Http\\Requests\\ABaseAPIRequest::filtered<\/a>"],[100,1,"<a href=\"Http\/Requests\/EventPaginateRequest.php.html#13\">App\\Http\\Requests\\EventPaginateRequest::authorize<\/a>"],[100,1,"<a href=\"Http\/Requests\/EventPaginateRequest.php.html#20\">App\\Http\\Requests\\EventPaginateRequest::createQueryParamsObject<\/a>"],[100,1,"<a href=\"Http\/Requests\/EventUpdatePartiallyRequest.php.html#13\">App\\Http\\Requests\\EventUpdatePartiallyRequest::authorize<\/a>"],[100,1,"<a href=\"Http\/Requests\/EventUpdatePartiallyRequest.php.html#21\">App\\Http\\Requests\\EventUpdatePartiallyRequest::rules<\/a>"],[100,1,"<a href=\"Http\/Requests\/EventUpdatePartiallyRequest.php.html#33\">App\\Http\\Requests\\EventUpdatePartiallyRequest::getTargetModel<\/a>"],[100,1,"<a href=\"Http\/Resources\/Collections\/EventResourceCollection.php.html#15\">App\\Http\\Resources\\EventResourceCollection::toArray<\/a>"],[100,2,"<a href=\"Http\/Resources\/EventResource.php.html#15\">App\\Http\\Resources\\EventResource::toArray<\/a>"],[100,1,"<a href=\"Http\/Resources\/UserResource.php.html#15\">App\\Http\\Resources\\UserResource::toArray<\/a>"],[100,1,"<a href=\"Providers\/AppServiceProvider.php.html#27\">App\\Providers\\AppServiceProvider::boot<\/a>"],[100,1,"<a href=\"Providers\/AppServiceProvider.php.html#37\">App\\Providers\\AppServiceProvider::register<\/a>"],[100,1,"<a href=\"Providers\/AuthServiceProvider.php.html#24\">App\\Providers\\AuthServiceProvider::boot<\/a>"],[0,1,"<a href=\"Providers\/BroadcastServiceProvider.php.html#15\">App\\Providers\\BroadcastServiceProvider::boot<\/a>"],[100,1,"<a href=\"Providers\/EventServiceProvider.php.html#26\">App\\Providers\\EventServiceProvider::boot<\/a>"],[100,1,"<a href=\"Providers\/RouteServiceProvider.php.html#24\">App\\Providers\\RouteServiceProvider::boot<\/a>"],[100,1,"<a href=\"Providers\/RouteServiceProvider.php.html#36\">App\\Providers\\RouteServiceProvider::map<\/a>"],[100,1,"<a href=\"Providers\/RouteServiceProvider.php.html#52\">App\\Providers\\RouteServiceProvider::mapWebRoutes<\/a>"],[100,1,"<a href=\"Providers\/RouteServiceProvider.php.html#66\">App\\Providers\\RouteServiceProvider::mapApiRoutes<\/a>"],[100,1,"<a href=\"QueryObject\/AQueryObject.php.html#20\">App\\QueryObject\\AQueryObject::__construct<\/a>"],[100,1,"<a href=\"QueryObject\/AQueryObject.php.html#28\">App\\QueryObject\\AQueryObject::getQuery<\/a>"],[0,1,"<a href=\"QueryObject\/AQueryObject.php.html#36\">App\\QueryObject\\AQueryObject::map<\/a>"],[100,2,"<a href=\"QueryObject\/AQueryObject.php.html#46\">App\\QueryObject\\AQueryObject::applyJoins<\/a>"],[61.111111111111114,7,"<a href=\"QueryObject\/AQueryObject.php.html#63\">App\\QueryObject\\AQueryObject::applyQueryParams<\/a>"],[100,2,"<a href=\"QueryObject\/AQueryObject.php.html#104\">App\\QueryObject\\AQueryObject::applyWhere<\/a>"],[0,1,"<a href=\"QueryObject\/AQueryObject.php.html#118\">App\\QueryObject\\AQueryObject::applyJoin<\/a>"],[100,1,"<a href=\"QueryObject\/EventListQueryObject.php.html#16\">App\\QueryObject\\EventListQueryObject::map<\/a>"],[66.66666666666666,2,"<a href=\"QueryObject\/EventListQueryObject.php.html#29\">App\\QueryObject\\EventListQueryObject::applyJoin<\/a>"],[100,4,"<a href=\"QueryObject\/EventListQueryObject.php.html#45\">App\\QueryObject\\EventListQueryObject::applyWhere<\/a>"],[100,1,"<a href=\"QueryParams\/QueryParamsObject.php.html#55\">App\\QueryParams\\QueryParamsObject::__construct<\/a>"],[90.9090909090909,3,"<a href=\"QueryParams\/QueryParamsObject.php.html#67\">App\\QueryParams\\QueryParamsObject::makeFromRequest<\/a>"],[100,1,"<a href=\"QueryParams\/QueryParamsObject.php.html#91\">App\\QueryParams\\QueryParamsObject::getAllowedFieldsToFilter<\/a>"],[0,1,"<a href=\"QueryParams\/QueryParamsObject.php.html#99\">App\\QueryParams\\QueryParamsObject::getAllowedIncludes<\/a>"],[100,1,"<a href=\"QueryParams\/QueryParamsObject.php.html#107\">App\\QueryParams\\QueryParamsObject::getAllowedFieldsToSort<\/a>"],[100,1,"<a href=\"QueryParams\/QueryParamsObject.php.html#115\">App\\QueryParams\\QueryParamsObject::getFiltersData<\/a>"],[100,1,"<a href=\"QueryParams\/QueryParamsObject.php.html#123\">App\\QueryParams\\QueryParamsObject::getSortsData<\/a>"],[0,1,"<a href=\"QueryParams\/QueryParamsObject.php.html#131\">App\\QueryParams\\QueryParamsObject::getIncludeData<\/a>"],[100,1,"<a href=\"QueryParams\/QueryParamsObject.php.html#139\">App\\QueryParams\\QueryParamsObject::getPaginationData<\/a>"],[100,1,"<a href=\"QueryParams\/QueryParamsObject.php.html#151\">App\\QueryParams\\QueryParamsObject::setAllowedFieldsToFilter<\/a>"],[0,1,"<a href=\"QueryParams\/QueryParamsObject.php.html#162\">App\\QueryParams\\QueryParamsObject::setAllowedIncludes<\/a>"],[0,1,"<a href=\"QueryParams\/QueryParamsObject.php.html#173\">App\\QueryParams\\QueryParamsObject::setAllowedFieldsToSort<\/a>"],[100,1,"<a href=\"Repositories\/EventRepository.php.html#19\">App\\Repositories\\EventRepository::getInstance<\/a>"],[100,1,"<a href=\"Repositories\/EventRepository.php.html#28\">App\\Repositories\\EventRepository::paginateList<\/a>"],[0,3,"<a href=\"Repositories\/EventRepository.php.html#45\">App\\Repositories\\EventRepository::maxFiredAtDateTime<\/a>"],[0,1,"<a href=\"Repositories\/EventRepository.php.html#55\">App\\Repositories\\EventRepository::allNotSent<\/a>"],[0,1,"<a href=\"Repositories\/UserRepository.php.html#19\">App\\Repositories\\UserRepository::getInstance<\/a>"],[0,2,"<a href=\"Repositories\/UserRepository.php.html#28\">App\\Repositories\\UserRepository::findByExternalId<\/a>"],[0,2,"<a href=\"Services\/Clients\/EventExternalServiceClient\/EventExternalServiceClientMock.php.html#20\">App\\Services\\Clients\\EventExternalServiceClient\\EventExternalServiceClientMock::requestFromDateTime<\/a>"],[0,5,"<a href=\"Services\/Clients\/EventExternalServiceClient\/EventExternalServiceClientMock.php.html#44\">App\\Services\\Clients\\EventExternalServiceClient\\EventExternalServiceClientMock::readFileLineByLine<\/a>"],[0,2,"<a href=\"Services\/Clients\/EventExternalServiceClient\/EventExternalServiceClientMock.php.html#61\">App\\Services\\Clients\\EventExternalServiceClient\\EventExternalServiceClientMock::parseLine<\/a>"],[0,1,"<a href=\"Services\/Clients\/EventExternalServiceClient\/ExternalEvent.php.html#33\">App\\Services\\Clients\\EventExternalServiceClient\\ExternalEvent::getUserId<\/a>"],[0,1,"<a href=\"Services\/Clients\/EventExternalServiceClient\/ExternalEvent.php.html#42\">App\\Services\\Clients\\EventExternalServiceClient\\ExternalEvent::setUserId<\/a>"],[0,1,"<a href=\"Services\/Clients\/EventExternalServiceClient\/ExternalEvent.php.html#50\">App\\Services\\Clients\\EventExternalServiceClient\\ExternalEvent::getMessage<\/a>"],[0,1,"<a href=\"Services\/Clients\/EventExternalServiceClient\/ExternalEvent.php.html#59\">App\\Services\\Clients\\EventExternalServiceClient\\ExternalEvent::setMessage<\/a>"],[0,1,"<a href=\"Services\/Clients\/EventExternalServiceClient\/ExternalEvent.php.html#67\">App\\Services\\Clients\\EventExternalServiceClient\\ExternalEvent::getDateTime<\/a>"],[0,1,"<a href=\"Services\/Clients\/EventExternalServiceClient\/ExternalEvent.php.html#76\">App\\Services\\Clients\\EventExternalServiceClient\\ExternalEvent::setDateTime<\/a>"],[0,1,"<a href=\"Services\/Clients\/EventExternalServiceClient\/RawToObjectExternalEventTransformer.php.html#11\">App\\Services\\Clients\\EventExternalServiceClient\\RawToObjectExternalEventTransformer::transform<\/a>"],[0,1,"<a href=\"Services\/Clients\/ExternalEventSubscriberClient\/ExternalEventSubscriberClientMock.php.html#13\">App\\Services\\Clients\\ExternalEventSubscriberClient\\ExternalEventSubscriberClientMock::push<\/a>"],[0,1,"<a href=\"Services\/Clients\/UserExternalServiceClient\/ExternalUser.php.html#31\">App\\Services\\Clients\\UserExternalServiceClient\\ExternalUser::getId<\/a>"],[0,1,"<a href=\"Services\/Clients\/UserExternalServiceClient\/ExternalUser.php.html#40\">App\\Services\\Clients\\UserExternalServiceClient\\ExternalUser::setId<\/a>"],[0,1,"<a href=\"Services\/Clients\/UserExternalServiceClient\/ExternalUser.php.html#48\">App\\Services\\Clients\\UserExternalServiceClient\\ExternalUser::getName<\/a>"],[0,1,"<a href=\"Services\/Clients\/UserExternalServiceClient\/ExternalUser.php.html#57\">App\\Services\\Clients\\UserExternalServiceClient\\ExternalUser::setName<\/a>"],[0,1,"<a href=\"Services\/Clients\/UserExternalServiceClient\/ExternalUser.php.html#65\">App\\Services\\Clients\\UserExternalServiceClient\\ExternalUser::getEmail<\/a>"],[0,1,"<a href=\"Services\/Clients\/UserExternalServiceClient\/ExternalUser.php.html#74\">App\\Services\\Clients\\UserExternalServiceClient\\ExternalUser::setEmail<\/a>"],[0,1,"<a href=\"Services\/Clients\/UserExternalServiceClient\/RawToObjectExternalUserTransformer.php.html#11\">App\\Services\\Clients\\UserExternalServiceClient\\RawToObjectExternalUserTransformer::transform<\/a>"],[0,2,"<a href=\"Services\/Clients\/UserExternalServiceClient\/UserExternalServiceClientMock.php.html#32\">App\\Services\\Clients\\UserExternalServiceClient\\UserExternalServiceClientMock::getUserById<\/a>"],[100,1,"<a href=\"Services\/EventService.php.html#31\">App\\Services\\EventService::__construct<\/a>"],[0,2,"<a href=\"Services\/EventService.php.html#42\">App\\Services\\EventService::createFromExternalEvent<\/a>"],[100,1,"<a href=\"Repositories\/CRUDRepositoryTrait.php.html#14\">CRUDRepositoryTrait::getInstance<\/a>"],[0,1,"<a href=\"Repositories\/CRUDRepositoryTrait.php.html#20\">CRUDRepositoryTrait::paginateList<\/a>"],[0,1,"<a href=\"Repositories\/CRUDRepositoryTrait.php.html#31\">CRUDRepositoryTrait::create<\/a>"],[100,1,"<a href=\"Repositories\/CRUDRepositoryTrait.php.html#43\">CRUDRepositoryTrait::update<\/a>"],[100,1,"<a href=\"Repositories\/CRUDRepositoryTrait.php.html#56\">CRUDRepositoryTrait::find<\/a>"],[0,2,"<a href=\"Repositories\/CRUDRepositoryTrait.php.html#65\">CRUDRepositoryTrait::findWhere<\/a>"],[75,2,"<a href=\"Repositories\/CRUDRepositoryTrait.php.html#75\">CRUDRepositoryTrait::delete<\/a>"],[0,1,"<a href=\"Repositories\/CRUDRepositoryTrait.php.html#89\">CRUDRepositoryTrait::all<\/a>"],[100,1,"<a href=\"Services\/CRUDServiceTrait.php.html#20\">CRUDServiceTrait::setRepository<\/a>"],[100,1,"<a href=\"Services\/CRUDServiceTrait.php.html#29\">CRUDServiceTrait::paginate<\/a>"],[100,1,"<a href=\"Services\/CRUDServiceTrait.php.html#38\">CRUDServiceTrait::find<\/a>"],[0,1,"<a href=\"Services\/CRUDServiceTrait.php.html#46\">CRUDServiceTrait::list<\/a>"],[0,1,"<a href=\"Services\/CRUDServiceTrait.php.html#55\">CRUDServiceTrait::create<\/a>"],[100,1,"<a href=\"Services\/CRUDServiceTrait.php.html#66\">CRUDServiceTrait::update<\/a>"],[100,2,"<a href=\"Services\/CRUDServiceTrait.php.html#77\">CRUDServiceTrait::delete<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>
