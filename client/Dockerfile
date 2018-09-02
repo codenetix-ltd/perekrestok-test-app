@@ -16,8 +16,6 @@ RUN adduser -D -u 1000 codenetix
 
 RUN npm install && npm run build
 
-RUN chmod +x dockerfiles/entry.sh
-
 EXPOSE 80
 
-ENTRYPOINT ["./dockerfiles/entry.sh"]
+CMD ["nginx", "-g", "daemon off;"]

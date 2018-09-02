@@ -7,6 +7,7 @@ services:
   frontend:
     volumes:
     - ./client:/var/www/html:cached
+    command: npm run serve
 
   documentation:
     volumes:
