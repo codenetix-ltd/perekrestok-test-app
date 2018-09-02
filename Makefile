@@ -4,6 +4,12 @@ build:
 up:
 	docker-compose up -d
 
+pull_events:
+    docker exec -it perekrestok-events-api php artisan pk:pull-events
+
+push_events:
+    docker exec -it perekrestok-events-api php artisan pk:push-events
+
 up_local:
 	docker-compose -f docker-compose.yml -f share-volumes.yml up -d
 

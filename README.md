@@ -14,7 +14,7 @@
 
 ## Установка
 
-> убедитесь что порты 80/8080 не заняты!
+> убедитесь, что порты 80/8080 не заняты!
 
 ```bash
 $ git clone git@github.com:codenetix-ltd/perekrestok-test-app.git .
@@ -64,3 +64,74 @@ Time: 10.12 seconds, Memory: 24.00MB
 
 OK (10 tests, 37 assertions)
 ```
+
+### Описание деталей реализации API компонента системы
+
+#### Идеалогия
+В основе разработки лежат:
+* TDD
+* API First (у меня даже статейка есть про это [https://habr.com/post/419525/]()
+* SOLID в самом его лучшем проявлении. Слабая связанность - залог успешной масштабируемости проекта
+
+#### Структура
+
+Логические точки входа в проект:
+* `app/Http/Controllers/EventController` - API контроллер event ресурса
+* `app/Console/Commands/PullEvents` - команда c CLI для обращения и вытягивания событий из удаленного микросервиса с последующей конвертацией и сохранением в БД
+* `app/Console/Commands/PushEvents` - команда с CLI для отправки 'дайджестов?' событий в удаленную систему (фактически просто для отправки событий, но переделать можно легко и просто ибо все слабосвязанно)
+* `app/Services/Clients` - клиенты для взаимодействия с внешними микросервисами: получение пользователей, получение эвентов, отправка эвентов (очень рекомендую ознакомитсья!)
+* `app/Providers/AppServiceProvider` - биндинги интерфейсов на реализации. Куда еще больше гибкости? :)
+
+#### Конфигурация и использование
+
+##### EventController
+
+Представляет Controller уровень MVP парадигмы. Основная задача: получение данных от клиента, делегирование для последующей обработки на уровень бизнес логики системы (services), получение результата, формирование ответа (через Resources)).
+
+##### PullEvents
+
+Запуск команды:
+```
+$ make pull_events
+```
+Пример результата
+```
+26 new events has been imported
+```
+###### Детали работы:
+Использует для коммуникации с внешним источником событий абстракцию `EventExternalServiceClientInterface`. Для тестирования был разработан 
+mock класс `EventExternalServiceClientMock`, который имитирует получение событий из внешнего источника путем чтения локального файла. Путь к файлу задается в конфиге `config/mock.php -> filePathWithFakeEvents` 
+Замена реализации абстракции осуществляется путем ребиндинга в файле `AppServiceProvider`:
+```
+...
+$this->app->bind(EventExternalServiceClientInterface::class, EventExternalServiceClientMock::class);
+...
+```
+по схожему принципу работает клиент источника пользователей `UserExternalServiceClientInterface`. Его mock `UserExternalServiceClientMock` реализует метод `public function getUserById(int $id): ExternalUser` в соответствии с примером из ТЗ.
+Биндинг:
+```
+...
+$this->app->bind(UserExternalServiceClientInterface::class, UserExternalServiceClientMock::class);
+...
+```
+
+##### PushEvents
+
+Запуск команды:
+```
+$ make push_events
+```
+Пример результата:
+```
+23 new events has been push into external system (Bitrix?)
+```
+###### Детали работы:
+Использует для отправки во внешний приемник событий абстракцию `ExternalEventSubscriberClientInterface`. Для тестирования был разработан 
+mock класс `ExternalEventSubscriberClientMock`, который имитирует отправку событий во внешний сервис, но фактически пишет результат `print_r` в файл из конфига `config/mock.php -> filePathWithEventSubscriberLog` 
+Замена реализации абстракции осуществляется путем ребиндинга в файле `AppServiceProvider`:
+```
+...
+        $this->app->bind(ExternalEventSubscriberClientInterface::class, ExternalEventSubscriberClientMock::class);
+...
+```
+
