@@ -135,6 +135,9 @@ $this->app->bind(ExternalEventSubscriberClientInterface::class, ExternalEventSub
 ...
 ```
 
+#### Тесты
+`Tests\Feature\EventTest` - покрыты основные API вызовы по ТЗ
+
 #### Как же запускать по CRON?
 
 По скольку мы используем docker, а как известно, запуск cron задач внутри контейнера является крайне дурным тоном, поэтому необходимо настроить crontab на хост машине c правилами
