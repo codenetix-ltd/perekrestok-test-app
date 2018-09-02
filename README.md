@@ -23,7 +23,7 @@ $ make up # запуск
 $ docker ps 
 ```
 В случе успеха команда выдаст похожий результат:
-![провежуточный результат](readmefiles/screenshot1.png)
+![промежуточный результат](readmefiles/screenshot1.png)
 
 Сервер приложения будет доступен по URL [http://localhost](), а документация по [http://localhost:8080]()
 
@@ -151,6 +151,8 @@ $this->app->bind(ExternalEventSubscriberClientInterface::class, ExternalEventSub
 
 Я довольно неплохо знаю `nodejs` и `typescript`, но сам по себе фронтенд не мой конек. Для этого приложения выбрал VueJS и использовал как каркас [https://github.com/petervmeijgaard/vue-2-boilerplate]() 
 Выводы делайте сами :)
+![фронт](readmefiles/screenshot2.png)
+
 
 ## Заключение
 
