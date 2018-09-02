@@ -1,55 +1,52 @@
 version: '2'
 services:
-    api:
-      build:
-        context: api
-      container_name: perekrestok-events-api
-      environment:
-        - APP_ENV=local
-        - DB_HOST=mysql
-        - DB_PASSWORD=root_password
-        - DB_DATABASE=perekrestok-events
-        - DB_USERNAME=root
-        - APP_URL=http://localhost
-        - APP_DEBUG=true
-        - APP_KEY=rmgGUy4tdVn1HE0vKuYAo9GRu3Pj6Ln5
-      volumes:
-        - ./api:/var/www:cached
-      expose:
-        - "9000"
-      links:
-        - "mysql"
+  api:
+    build:
+      context: api
+    container_name: perekrestok-events-api
+    environment:
+    - APP_ENV=local
+    - DB_HOST=mysql
+    - DB_PASSWORD=root_password
+    - DB_DATABASE=perekrestok-events
+    - DB_USERNAME=root
+    - APP_URL=http://localhost
+    - APP_DEBUG=true
+    - APP_KEY=rmgGUy4tdVn1HE0vKuYAo9GRu3Pj6Ln5
+    expose:
+    - "9000"
+    links:
+    - "mysql"
 
-    frontend:
-      build:
-        context: client
-      container_name: perekrestok-events-frontend
+  frontend:
+    build:
+      context: client
+    container_name: perekrestok-events-frontend
 
-    documentation:
-      image: swaggerapi/swagger-ui
-      container_name: perekrestok-events-documentation
-      volumes:
-      - ./api_documentation:/app:cached
+  documentation:
+    build:
+      context: api_documentation
+    container_name: perekrestok-events-documentation
 
-    proxy:
-      build:
-        context: proxy
-      container_name: perekrestok-events-proxy
-      ports:
-      - "80:80"
-      - "8080:8080"
-      links:
-      - api
-      - documentation
-      - frontend
+  proxy:
+    build:
+      context: proxy
+    container_name: perekrestok-events-proxy
+    ports:
+    - "80:80"
+    - "8080:8080"
+    links:
+    - api
+    - documentation
+    - frontend
 
-    mysql:
-      image: mysql:5.7.22
-      container_name: mysql
-      ports:
-        - "3306:3306"
-      environment:
-        - MYSQL_DATABASE=perekrestok-events
-        - MYSQL_ROOT_PASSWORD=root_password
-      volumes:
-        - ./data:/var/lib/mysql
+  mysql:
+    image: mysql:5.7.22
+    container_name: mysql
+    ports:
+    - "3306:3306"
+    environment:
+    - MYSQL_DATABASE=perekrestok-events
+    - MYSQL_ROOT_PASSWORD=root_password
+    volumes:
+    - ./data:/var/lib/mysql

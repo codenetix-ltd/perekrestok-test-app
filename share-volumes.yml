@@ -1,0 +1,13 @@
+version: '2'
+services:
+  api:
+    volumes:
+    - ./api:/var/www:cached
+
+  frontend:
+    volumes:
+    - ./client:/var/www/html:cached
+
+  documentation:
+    volumes:
+    - ./api_documentation:/app:cached

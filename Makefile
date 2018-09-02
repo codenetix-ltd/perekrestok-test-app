@@ -4,6 +4,9 @@ build:
 up:
 	docker-compose up -d
 
+up_local:
+	docker-compose -f docker-compose.yml -f share-volumes.yml up -d
+
 api_code_check:
 	docker exec -it perekrestok-events-api ./vendor/bin/phpcs --standard=./phpcs.xml
 
