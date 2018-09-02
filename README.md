@@ -123,7 +123,7 @@ $ make push_events
 ```
 Пример результата:
 ```
-23 new events has been push into external system (Bitrix?)
+23 new events has been pushed into external system (Bitrix?)
 ```
 ###### Детали работы:
 Использует для отправки во внешний приемник событий абстракцию `ExternalEventSubscriberClientInterface`. Для тестирования был разработан 
@@ -131,7 +131,26 @@ mock класс `ExternalEventSubscriberClientMock`, который имитир
 Замена реализации абстракции осуществляется путем ребиндинга в файле `AppServiceProvider`:
 ```
 ...
-        $this->app->bind(ExternalEventSubscriberClientInterface::class, ExternalEventSubscriberClientMock::class);
+$this->app->bind(ExternalEventSubscriberClientInterface::class, ExternalEventSubscriberClientMock::class);
 ...
 ```
 
+#### Как же запускать по CRON?
+
+По скольку мы используем docker, а как известно, запуск cron задач внутри контейнера является крайне дурным тоном, поэтому необходимо настроить crontab на хост машине c правилами
+```
+*/5 * * * * make pull_events
+*/5 * * * * make push_events
+```
+... а вообще круто бы было использовать kubernetes с его специальными `jobs`
+
+### Немного про frontend
+
+Я довольно неплохо знаю `nodejs` и `typescript`, но сам по себе фронтенд не мой конек. Для этого приложения выбрал VueJS и использовал как каркас [https://github.com/petervmeijgaard/vue-2-boilerplate]() 
+Выводый делайте сами :)
+
+## Заключение
+
+> Задался целью сделать хорошо - показать свой максимум, но получилось как всегда - не хватило времени (особенно на фронт), а тут еще и требования по железу/ПО вылезли под конец... 
+
+Я профессиональный backend разработчик и архитектор, ex CTO компании [http://codenetix.com](), команду разработчиков которой собрал сам. Результат полученного опыта меня и моей команды за последние 3 года  позволил проделать огромную работу по организации структуры проекта за очень короткий срок. Итог: за бакенд не стыдно, а фронт бы еще доделал/переделал.
