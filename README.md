@@ -147,7 +147,7 @@ $this->app->bind(ExternalEventSubscriberClientInterface::class, ExternalEventSub
 ### Немного про frontend
 
 Я довольно неплохо знаю `nodejs` и `typescript`, но сам по себе фронтенд не мой конек. Для этого приложения выбрал VueJS и использовал как каркас [https://github.com/petervmeijgaard/vue-2-boilerplate]() 
-Выводый делайте сами :)
+Выводы делайте сами :)
 
 ## Заключение
 
