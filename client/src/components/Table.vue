@@ -146,7 +146,7 @@
       markAsHidden(id) {
         this.isLoading = true;
         Vue.$http
-          .patch('http://localhost/api/events/' + id, {is_hidden: true})
+          .patch('http://37.139.0.86/api/events/' + id, {is_hidden: true})
           .then((response) => {
             this.isLoading = false;
             this.loadItems();
@@ -155,7 +155,7 @@
       deleteEvent(id) {
         this.isLoading = true;
         Vue.$http
-          .delete('http://localhost/api/events/' + id)
+          .delete('http://37.139.0.86/api/events/' + id)
           .then((response) => {
             this.isLoading = false;
             this.loadItems();
@@ -193,7 +193,7 @@
       // load items is what brings back the rows from server
       loadItems() {
 
-        let url = 'http://localhost/api/events?pagination[perPage]=' + this.serverParams.perPage + '&pagination[page]=' + this.serverParams.page;
+        let url = 'http://37.139.0.86/api/events?pagination[perPage]=' + this.serverParams.perPage + '&pagination[page]=' + this.serverParams.page;
 
         Object.keys(this.serverParams.columnFilters).forEach(key => {
           url += '&filter[' + key + ']=' + this.serverParams.columnFilters[key];
