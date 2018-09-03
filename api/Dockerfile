@@ -11,6 +11,7 @@ RUN curl -sL https://deb.nodesource.com/setup_6.x | bash -
 RUN apt-get update && \
     apt-get install -y \
     git \
+    unzip \
     openssl \
     libxml2-dev libxslt-dev \
     libfreetype6-dev \
@@ -20,14 +21,11 @@ RUN apt-get update && \
 
 RUN docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ && \
     docker-php-ext-install \
-    pcntl \
+    zip \
     mysqli \
     pdo \
     pdo_mysql \
 	mbstring \
-	dom \
-	xmlrpc \
-	xsl \
     gd \
     exif
 
